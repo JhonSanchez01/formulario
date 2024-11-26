@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Formulario</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br><br>
+            <label for="Telefono">Telefono</label>
+            <input type="text"id="Telefono" name="Telefono" aria-required="numbers"><br><br>
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required><br><br>
+            <label for="departamento">Departamento:</label>
+            <select id="departamento" name="departamento" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="Antioquia">Antioquia</option>
+                <option value="Cundinamarca">Cundinamarca</option>
+                <option value="Valle del Cauca">Valle del Cauca</option>
+            </select><br><br>
+            <label for="municipio">Municipio/ciudad:</label>
+            <select id="municipio" name="municipio" required>
+                <option value="" disabled selected>Seleccionar primero un departamento</option>
+                <option value="Medellín">Medellín (Antioquia)</option>
+                <option value="Envigado">Envigado (Antioquia)</option>
+                <option value="Rionegro">Rionegro (Antioquia)</option>
+                <option value="Bogotá">Bogotá (Cundinamarca)</option>
+                <option value="Chía">Chía (Cundinamarca)</option>
+                <option value="Zipaquirá">Zipaquirá (Cundinamarca)</option>
+                <option value="Cali">Cali (Valle del Cauca)</option>
+                <option value="Palmira">Palmira (Valle del Cauca)</option>
+                <option value="Buga">Buga (Valle del Cauca)</option>
+            </select><br><br>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+            <div class="button-container">
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
